@@ -1,0 +1,281 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Dancing+Script&display=swap');
+
+
+   .head {
+       width: 100%;
+       display: flex;
+   }
+
+   .headtxt {
+       width: 58%;
+       padding: 3%;
+       padding-right: 0%;
+       box-sizing: border-box;
+   }
+
+   .headtxt>h1 {
+       text-align: right;
+       font-size: 5vw;
+       font-family: 'Dancing Script', cursive;
+       margin: 0%;
+       margin-right: 0%;
+   }
+
+   .imghead {
+       width: 42%;
+       display: flex;
+       align-items: center;
+   }
+
+   .imghead>img {
+       width: 11%;
+   }
+
+   .body {
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+       font-family: 'Chonburi', cursive;
+   }
+
+   .todolist {
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .input-newdata {
+       width: 70%;
+       display: flex;
+       justify-self: center;
+       align-self: center;
+   }
+
+   .input-newdata>input {
+       text-align: center;
+       height: 50px;
+       width: 90%;
+       border: 0.5px solid rgba(0, 0, 0, 0.42);
+       font-family: 'Chonburi', cursive;
+       font-size: 13px;
+       box-shadow: 1px 1px 10px #00000027;
+   }
+
+   .input-newdata>button {
+       height: 53px;
+       width: 10%;
+       border: none;
+       background-color: black;
+       color: white;
+       font-family: 'Chonburi', cursive;
+       font-size: 25px;
+       box-shadow: 1px 1px 10px #00000027;
+   }
+
+   .input-newdata>button:hover {
+       border: 1.5px solid black;
+       background-color: white;
+       color: black;
+       font-family: 'Chonburi', cursive;
+       font-size: 35px;
+       box-shadow: 1px 1px 10px #00000027;
+       font-weight: bold;
+   }
+
+   .list {
+       width: 60%;
+       align-self: center;
+       height: 397px;
+       overflow: auto;
+       border: 1px solid rgba(0, 0, 0, 0.209);
+       box-shadow: 1px 1px 10px #00000027;
+       background-color: rgba(255, 255, 255, 0.933);
+   }
+
+   .list::-webkit-scrollbar {
+       display: none;
+   }
+
+   .txt {
+       align-self: center;
+       width: 60%;
+       color: white;
+       padding-top: 5%;
+       padding-bottom: 1%;
+
+   }
+
+   .txt>h1 {
+       width: 100%;
+       background-color: black;
+       padding-left: 8%;
+       margin: 0%;
+       padding: 2%;
+       padding-left: 5%;
+       border: 1px solid rgba(0, 0, 0, 0.209);
+       box-shadow: 1px 1px 10px #00000027;
+       box-sizing: border-box;
+       font-family: 'Dancing Script', cursive;
+   }
+
+   .list-card {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .cardlist {
+       width: 100%;
+       border-bottom: 0.5px solid rgba(0, 0, 0, 0.074);
+       display: flex;
+       justify-content: center;
+   }
+
+   .cardlist-data {
+       width: 90%;
+       height: 85px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .showdata {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .showdata > input{
+       height: 30%;
+   }
+
+   .showdata>p {
+       width: 300px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       margin: 0%;
+       margin-left: 1%;
+   }
+
+   .editdata {
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .editdata-input {
+       width: 80%;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   .editdata-input>input {
+       width: 90%;
+       height: 25px;
+       font-family: 'Chonburi', cursive;
+       font-size: 16px;
+       border: none;
+       border: 0.5px solid rgba(0, 0, 0, 0.209);
+   }
+
+   .editdata-btn {
+       width: 20%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .cardlist-btn {
+       width: 15%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .cardlist-btn-edit {
+       width: 50%;
+       height: 50%;
+       margin: 0.5%;
+       border: none;
+       background-image: url("../assets/images/edit.png");
+       background-size: 55%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: transparent;
+   }
+
+   .cardlist-btn-edit:hover {
+       background-image: url("../assets/images/edithover.png");
+   }
+
+   .cardlist-btn-dlt {
+       width: 50%;
+       height: 50%;
+       margin: 0.5%;
+       border: none;
+       background-image: url("../assets/images/recycle-bin.png");
+       background-size: 55%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: transparent;
+   }
+
+   .cardlist-btn-dlt:hover {
+       background-image: url("../assets/images/recycle-binhover.png");
+   }
+
+   .cardlist-btn-save {
+       width: 30%;
+       height: 30%;
+       margin: 0.5%;
+       border: none;
+       background-image: url("../assets/images/save.png");
+       background-size: 60%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: transparent;
+   }
+
+   .cardlist-btn-save:hover {
+       background-image: url("../assets/images/savehover.png");
+   }
+
+   .cardlist-btn-close {
+       width: 30%;
+       height: 30%;
+       border: none;
+       background-image: url("../assets/images/cancel.png");
+       background-size: 60%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: transparent;
+   }
+
+
+   .success-card {
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .child-success-card::-webkit-scrollbar {
+       display: none;
+   }
+
+   .child-success-card {
+       border: 1px solid rgba(0, 0, 0, 0.209);
+       width: 60%;
+       height: 450px;
+       overflow: auto;
+       box-shadow: 1px 1px 10px #00000027;
+       background-color: rgba(255, 255, 255, 0.925);
+   }

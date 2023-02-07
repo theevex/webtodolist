@@ -1,0 +1,78 @@
+
+<div class="head">
+  <div class="headtxt">
+    <h1> To do list.</h1>
+  </div>
+  <div class="imghead">
+    <img src="../assets/images/pen.png" alt="">
+  </div>
+</div>
+<!-- body -->
+<div class="body">
+  <div class="todolist">
+    <div class="input-newdata">
+      <input #datatodolist type="text" placeholder="Let's type something.." maxlength="34" />
+      <button (click)="insertnewdata(datatodolist.value)"> + </button>
+    </div>
+    <div class="txt">
+      <h1> To do ..</h1>
+    </div>
+    <div class="list">
+      <div class="list-card" *ngIf=" dttodolist !== null ">
+        <div class="cardlist" *ngFor="let datatodo of dttodolist;let i = index">
+          <div class="cardlist-data">
+
+            <div class="showdata" *ngIf="divcard1">
+              <input type="checkbox" name="data{{i}}" id="data{{i}}" (change)="checkData(i)">
+              <p>{{datatodo}}</p>
+            </div>
+
+            <div class="editdata"*ngIf="divcard2">
+             
+                <div class="editdata-input">
+                  <input type="text" #inputedit id="data{{i}}" value="{{datatodo}} ">
+                </div>
+                <div class="editdata-btn">
+                  <button class="cardlist-btn-save" (click)="closeEditData(inputedit.value,i)"></button>
+                  <button class="cardlist-btn-close" (click)="closeinputEditData()"></button>
+                </div>
+            </div>
+          </div>
+        
+
+        <div class="cardlist-btn">
+          <button class="cardlist-btn-edit" (click)="editData()"></button>
+          <button class="cardlist-btn-dlt" (click)="deleteDataFromTodoList(i)"></button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+<div class="success-card">
+  <div class="txt">
+    <h1> Success</h1>
+  </div>
+  <div class="child-success-card" *ngIf=" dttodolist !== null ">
+    <div class="cardlist" *ngFor="let dataSuccess of todoSuccess;let i = index">
+      <div class="cardlist-data">
+        <p id="data{{i}}">{{dataSuccess}} </p>
+      </div>
+      <div class="cardlist-btn">
+        <button class="cardlist-btn-dlt" (click)="deleteDataFromSuccessList(i)"></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
